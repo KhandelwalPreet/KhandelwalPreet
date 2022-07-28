@@ -9,6 +9,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { initializeApp } from 'firebase/app';
 import ResponsiveAppBar from '../Nav2';
 import Row2 from '../Row2';
+import Row from '../Row';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBY_gnlBU1zh5rya-tC7e03Gv8937DVRRc",
@@ -62,6 +63,9 @@ function Home() {
         <Button variant="contained">Contained</Button>
         </Stack>
         </div>
+        <Row/>
+           <Row/>
+           <Row/>
         <Row2 title="Business"   Genere = "%fiction"   row_category = ""    loggedin = {loggedin} uid = {user_id}/>
         <Row2 title="self help"   Genere = "%%"   row_category = ""   loggedin = {loggedin}/>
         <Row2 title="Business"   Genere = "%Business%"   row_category = "%buiseness%"    loggedin = {loggedin} uid = {user_id}/>
