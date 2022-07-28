@@ -28,17 +28,17 @@ function Row({ title, uid , query_string , Genere , row_category ,loggedin, isGr
   // *** book data ***
   const [bookdata, setbookdata] = useState([]);
 
-  // useEffect(() => {
-  //   fetch(
-  //     "https://www.googleapis.com/books/v1/users/117093074988142843015/bookshelves/1001/volumes?key=AIzaSyBaXf6bQbSAnat2QIcMWgRDSziJ4l3oAyI"
-  //   )
-  //     .then((res) => res.json())
-  //     .then((data) => setbookdata(data.items))
-  //     .then(() => {
-  //       console.log(bookdata);
-  //     });
+  useEffect(() => {
+    fetch(
+      "https://www.googleapis.com/books/v1/users/117093074988142843015/bookshelves/1001/volumes?key=AIzaSyBaXf6bQbSAnat2QIcMWgRDSziJ4l3oAyI"
+    )
+      .then((res) => res.json())
+      .then((data) => setbookdata(data.items))
+      .then(() => {
+        console.log(bookdata);
+      });
 
-  // }, []);
+  }, []);
 
   useEffect(() => {
     axios.get("http://localhost:3003/get/for_row", {
