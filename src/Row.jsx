@@ -40,22 +40,22 @@ function Row({ title, uid , query_string , Genere , row_category ,loggedin, isGr
 
   }, []);
 
-  useEffect(() => {
-    axios.get("http://localhost:3003/get/for_row", {
-      params: {
-        genere: Genere,
-        row_category : row_category,
-        query_string : query_string 
-      },
-    })
-    .then((result)=>{
-       setbookdata(result.data);
-    })
-    .catch((err)=>{
-      console.log({'err_in_row' : err});
-    })
+//   useEffect(() => {
+//     axios.get("http://localhost:3003/get/for_row", {
+//       params: {
+//         genere: Genere,
+//         row_category : row_category,
+//         query_string : query_string 
+//       },
+//     })
+//     .then((result)=>{
+//        setbookdata(result.data);
+//     })
+//     .catch((err)=>{
+//       console.log({'err_in_row' : err});
+//     })
   
-  },[] );
+//   },[] );
   
   // *** Modal open close **
   const [modal_data, setModal_data] = useState([]); // modal data
@@ -104,7 +104,7 @@ function Row({ title, uid , query_string , Genere , row_category ,loggedin, isGr
       <div className={`row_posters ${isGrid && "gridRow"}`}>
         
         {bookdata.map((item) => {
-          let thumbnail = item.img;//item.volumeInfo.imageLinks.thumbnail;
+          let thumbnail = item.volumeInfo.imageLinks.thumbnail;
 
           return (
             <img
