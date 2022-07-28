@@ -1,0 +1,80 @@
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding : 20px ;
+    height: 2.5%;
+   
+    
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 180px;
+    transition: transform 450ms;
+    margin-right: 10px;   
+}
+
+.row_poster:hover{
+    transform : scale(1.08);
+    cursor: pointer;
+    
+}
+
+
+
+
+.description{
+   left : 50px;
+   top: 10000px;
+}
+Button{
+    grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 0;
+  grid-row-end: 3;
+}
+.gridRow{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+   
+}
+.pre-btn,
+.nxt-btn{
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pre-btn{
+    left: 0;
+    background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn{
+    right: 0;
+    background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.nxt-btn img{
+    width: 10px;
+    height: 20px;
+    opacity: 0;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img{
+    opacity: 1;
+}
+

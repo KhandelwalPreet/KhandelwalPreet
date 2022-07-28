@@ -1,0 +1,26 @@
+.logo{
+    margin-left: 2.5%;
+    color: white;
+}
+
+.NavBar_content{
+    display: flex;
+    background-color: #2B303A;
+    border-bottom: 20px black;
+    justify-content: flex-end ;
+    
+}
+.links{
+    margin: auto;
+    color: white;
+    flex-direction: end;
+   
+}
+.NavBar{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+    border: 20px black;
+    scroll-padding: 20px;
+    
+}

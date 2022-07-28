@@ -1,0 +1,13 @@
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBY_gnlBU1zh5rya-tC7e03Gv8937DVRRc",
+  authDomain: "paper-reed.firebaseapp.com",
+  projectId: "paper-reed",
+  storageBucket: "paper-reed.appspot.com",
+  messagingSenderId: "984882080850",
+  appId: "1:984882080850:web:c4063f4ed8c78eef86c38b",
+  measurementId: "G-4BXHKKGTF6"
+};
+
+export default firebaseConfig
