@@ -44,39 +44,7 @@ function Row2({ title, uid , query_string , Genere , row_category ,loggedin, isG
 //       });
 //   }, []);
 // ANCHOR MODAL
-    let test  = Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@KhandelwalPreet 
-benoitvallon
-/
-100-best-books
-Public
-Fork your own copy of benoitvallon/100-best-books
-Code
-Issues
-1
-Pull requests
-2
-Actions
-Projects
-Wiki
-Security
-Insights
-100-best-books/books.json
-@benoitvallon
-benoitvallon Fixes image link for Pedro Paramo
-Latest commit 26ee616 on Oct 8, 2015
- History
- 1 contributor
-1002 lines (1002 sloc)  27.2 KB
- 
-
+    let test  =
 [
   {
     "author": "Chinua Achebe",
